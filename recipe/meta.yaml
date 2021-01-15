@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/taxizedb_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/taxizedb/taxizedb_{{ version }}.tar.gz
-  sha256: 7ca7b616fbdb287724255f18d2900759ef5d4706c0437fa29a252e482123bf00
+  sha256: 5f28338a233f0021097147e74c5f83107e5847de3413eceb308208e39af9fcb4
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
 
@@ -59,12 +59,10 @@ test:
 about:
   home: https://ropensci.github.io/taxizedb/, https://github.com/ropensci/taxizedb
   license: MIT
-  summary: Tools for working with 'taxonomic' databases, including utilities for downloading
-    databases, loading them into various 'SQL' databases, cleaning up files, and providing
-    a 'SQL' connection that can be used to do 'SQL' queries directly or used in 'dplyr'.
+  summary: Tools for working with 'taxonomic' databases, including utilities for downloading databases, loading them into various 'SQL' databases, cleaning up files, and providing a 'SQL' connection that can be used to do 'SQL' queries directly or used in 'dplyr'.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
