@@ -1,11 +1,11 @@
-About r-taxizedb
-================
+About r-taxizedb-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-taxizedb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ropensci.github.io/taxizedb/, https://github.com/ropensci/taxizedb
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-taxizedb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for working with 'taxonomic' databases, including utilities for downloading databases, loading them into various 'SQL' databases, cleaning up files, and providing a 'SQL' connection that can be used to do 'SQL' queries directly or used in 'dplyr'.
 
