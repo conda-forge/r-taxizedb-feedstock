@@ -1,6 +1,5 @@
 {% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-taxizedb
@@ -13,8 +12,7 @@ source:
   sha256: 452a1b8079e370c1f29a1ff40d731a5b04c935068b1d6b1c5d808e8bebbafd94
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
 
   rpaths:
