@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/taxizedb_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/taxizedb/taxizedb_{{ version }}.tar.gz
-  sha256: 452a1b8079e370c1f29a1ff40d731a5b04c935068b1d6b1c5d808e8bebbafd94
+  sha256: e9c2f7ca2bc6e7d6814f48a1237f5f7caf8cd904e744debf2ca412414638a521
 
 build:
-  number: 2
+  number: 0
   noarch: generic
 
   rpaths:
